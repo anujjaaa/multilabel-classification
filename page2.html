@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<style>
+body {
+    background-image: url("pg.jpg");
+    font-family: Arial, Helvetica, sans-serif;
+    }
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+button {
+  background-color: #5FB0E8;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+}
+
+
+
+.space{
+    padding: 16px;
+}
+
+</style>
+</head>
+<body>
+<div class="col-sm-2"></div>
+<div class="col-sm-8" >
+    <h2><center>Enter Below Details : </center></h2>
+       <form action="/action_page.php">
+    <div class = "space">
+    <label for="TITLE"><b>TITLE</b></label>
+    <input type="text" placeholder="ENTER TITLE" name="TITLE" required>
+
+    <label for="BODY"><b>BODY</b></label>
+    <input type="text" placeholder="ENTER THE BODY" name="BODY" required>
+
+    <button type="PREDICT">Predict</button>
+    <button type="RESET">Reset</button>
+</div>
+           <div class="row" style="margin:300px 350px;">
+       <p><a href="http://localhost:63342/medium/venv/template/page3.html?_ijt=cqn2nhesajca8h7ch0n4hmm2sn">know more</a></p>
+    </div>
+</body>
+</html>

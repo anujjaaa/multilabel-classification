@@ -1,0 +1,32 @@
+
+        <h1>MULTI-LABEL BLOG TAG PREDICTION</h1>
+        <p>This application is going to predict the tags present in your blog.</p>
+
+
+        <form action="http://localhost:5000/predict" method="POST">
+
+            <!-- user input -->
+            <h3>Enter Your Blog Details</h3>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="">Title</label>
+                        <input name="Title" type="String" class="form-control">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="">Body</label>
+                        <input name="Body" type="String" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <input class="btn-primary btn-lg" type="submit" value="Predict">
+                    <input class="btn btn-danger" type="reset" value="Clear">
+                </div>
+            </div>
+        </form>
