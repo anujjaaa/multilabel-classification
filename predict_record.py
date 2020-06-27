@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 df= pd.read_csv('/home/sunbeam/PycharmProjects/medium/final.csv')
 
+#======================================selecting columns===========================================================
 def data(t1,t2):
     labels = []
     y = df.iloc[:, np.array(
@@ -11,6 +12,8 @@ def data(t1,t2):
     from sklearn.feature_extraction.text import CountVectorizer
     from pandas import DataFrame
 
+    
+    #======================================using NLP===========================================================
     cv = CountVectorizer(stop_words="english").fit(x1)
     header = DataFrame(cv.transform(x1).todense(), columns=cv.get_feature_names())
     cvArticle = cv.fit(x2)
