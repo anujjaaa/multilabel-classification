@@ -50,7 +50,7 @@ xtrain,xtest,ytrain,ytest=train_test_split(x,y,random_state=4599, test_size=0.2)
 # xtrain = pandas.get_dummies(xtrain, columns=['Embarked'])
 
 
-#=============================================================================================================
+#======================================predictor models===========================================================
 
 test1= pd.read_csv('/home/sunbeam/PycharmProjects/medium/test1.csv')
 
